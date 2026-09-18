@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "outputs": {
+    "savings_balance": "$315.08"
+  },
+  "outcome_code": null,
+  "message": "Deterministic replay completed and checkpoint verified.",
+  "failed_step_id": null,
+  "expected": null,
+  "observed": null,
+  "evidence_path": null
+}

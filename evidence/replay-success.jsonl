@@ -1,0 +1,5 @@
+{"timestamp": "2026-09-18T07:18:26.474620+00:00", "event": "replay_started", "capability": "get_member_savings_balance", "params": ["member_id"]}
+{"timestamp": "2026-09-18T07:18:26.535318+00:00", "event": "replay_step_ok", "step": "step-01", "attempt": 1}
+{"timestamp": "2026-09-18T07:18:26.595966+00:00", "event": "replay_step_ok", "step": "step-02", "attempt": 1}
+{"timestamp": "2026-09-18T07:18:26.610383+00:00", "event": "replay_step_ok", "step": "step-03", "attempt": 1}
+{"timestamp": "2026-09-18T07:18:26.611777+00:00", "event": "replay_succeeded", "result": {"status": "success", "outputs": {"savings_balance": "$315.08"}, "outcome_code": null, "message": "Deterministic replay completed and checkpoint verified.", "failed_step_id": null, "expected": null, "observed": null, "evidence_path": null}}

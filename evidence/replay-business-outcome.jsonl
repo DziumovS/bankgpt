@@ -1,0 +1,4 @@
+{"timestamp": "2026-09-18T06:41:46.147516+00:00", "event": "replay_started", "capability": "get_member_savings_balance", "params": ["member_id"]}
+{"timestamp": "2026-09-18T06:41:46.198297+00:00", "event": "replay_step_ok", "step": "step-01", "attempt": 1}
+{"timestamp": "2026-09-18T06:41:46.256705+00:00", "event": "replay_step_ok", "step": "step-02", "attempt": 1}
+{"timestamp": "2026-09-18T06:41:46.270858+00:00", "event": "replay_business_outcome", "result": {"status": "business_outcome", "outputs": {}, "outcome_code": "MEMBER_NOT_FOUND", "message": "No member exists with that number", "failed_step_id": null, "expected": null, "observed": null, "evidence_path": null}}

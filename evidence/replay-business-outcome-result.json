@@ -1,0 +1,10 @@
+{
+  "status": "business_outcome",
+  "outputs": {},
+  "outcome_code": "MEMBER_NOT_FOUND",
+  "message": "No member exists with that number",
+  "failed_step_id": null,
+  "expected": null,
+  "observed": null,
+  "evidence_path": null
+}

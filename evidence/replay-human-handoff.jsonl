@@ -1,0 +1,9 @@
+{"timestamp": "2026-09-18T06:42:33.954319+00:00", "event": "replay_started", "capability": "get_member_savings_balance", "params": ["member_id"]}
+{"timestamp": "2026-09-18T06:42:33.983165+00:00", "event": "replay_step_ok", "step": "step-01", "attempt": 1}
+{"timestamp": "2026-09-18T06:42:39.021821+00:00", "event": "replay_transient_error", "step": "step-02", "attempt": 1, "error": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Search Member BROKEN\", exact=True)\n"}
+{"timestamp": "2026-09-18T06:42:44.025011+00:00", "event": "replay_transient_error", "step": "step-02", "attempt": 2, "error": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Search Member BROKEN\", exact=True)\n"}
+{"timestamp": "2026-09-18T06:42:49.028060+00:00", "event": "replay_transient_error", "step": "step-02", "attempt": 3, "error": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Search Member BROKEN\", exact=True)\n"}
+{"timestamp": "2026-09-18T06:43:23.888141+00:00", "event": "human_handoff_completed", "step": "step-02", "operator_note": "Clicked Search Member manually in the existing browser session", "before_screenshot": "evidence/handoff-20260918T064249Z-before.png", "after_screenshot": "evidence/handoff-20260918T064249Z-after.png"}
+{"timestamp": "2026-09-18T06:43:23.889920+00:00", "event": "replay_step_completed_by_human", "step": "step-02"}
+{"timestamp": "2026-09-18T06:43:23.892955+00:00", "event": "replay_step_ok", "step": "step-03", "attempt": 1}
+{"timestamp": "2026-09-18T06:43:23.894335+00:00", "event": "replay_succeeded", "result": {"status": "success", "outputs": {"savings_balance": "$315.08"}, "outcome_code": null, "message": "Deterministic replay completed and checkpoint verified.", "failed_step_id": null, "expected": null, "observed": null, "evidence_path": null}}

@@ -1,0 +1,10 @@
+{
+  "status": "failure",
+  "outputs": {},
+  "outcome_code": null,
+  "message": "Hard failure after bounded retries.",
+  "failed_step_id": "step-02",
+  "expected": "Step click should complete",
+  "observed": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Search Member BROKEN\", exact=True)\n",
+  "evidence_path": "evidence/replay-failure-step-02.png"
+}

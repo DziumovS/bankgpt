@@ -1,0 +1,9 @@
+{
+  "reason": "Replay could not complete step-02 after retries: Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Search Member BROKEN\", exact=True)\n",
+  "step_id": "step-02",
+  "operator_note": "Clicked Search Member manually in the existing browser session",
+  "started_at": "2026-09-18T06:42:49.129664Z",
+  "resumed_at": "2026-09-18T06:43:23.805098Z",
+  "before_screenshot": "evidence/handoff-20260918T064249Z-before.png",
+  "after_screenshot": "evidence/handoff-20260918T064249Z-after.png"
+}

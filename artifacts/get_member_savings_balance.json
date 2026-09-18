@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "capability_name": "get_member_savings_balance",
+  "capability_version": 1,
+  "description": "Look up the member identified by member_id and return the current savings balance",
+  "target_entrypoint": "http://127.0.0.1:8000/",
+  "created_at": "2026-09-18T07:14:11.469977Z",
+  "inputs": [
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": true,
+      "description": "Runtime discovery parameter"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "savings_balance",
+      "type": "string",
+      "description": "Value extracted by step-03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-01",
+      "action": "fill",
+      "locator": {
+        "kind": "role",
+        "value": "textbox",
+        "name": "Member Number",
+        "exact": true
+      },
+      "value_template": "${member_id}",
+      "output_name": null,
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step-02",
+      "action": "click",
+      "locator": {
+        "kind": "role",
+        "value": "button",
+        "name": "Search Member",
+        "exact": true
+      },
+      "value_template": null,
+      "output_name": null,
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step-03",
+      "action": "extract",
+      "locator": {
+        "kind": "role",
+        "value": "status",
+        "name": "Savings Balance",
+        "exact": true
+      },
+      "value_template": null,
+      "output_name": "savings_balance",
+      "timeout_ms": 5000
+    }
+  ],
+  "checkpoint": {
+    "kind": "text_present",
+    "value": "Account details loaded"
+  },
+  "business_outcomes": [
+    {
+      "code": "MEMBER_NOT_FOUND",
+      "text_present": "Member not found",
+      "message": "No member exists with that number"
+    }
+  ],
+  "metadata": {
+    "locator_preference": [
+      "role",
+      "label",
+      "text",
+      "css"
+    ]
+  }
+}
